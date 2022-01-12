@@ -12,11 +12,11 @@ function computerPlay() {
 }
 
 function playerPlay() {
-  // let playerChoise = prompt('Make your choise');
-  let choise = 'Rock';
-  // ITEMS.forEach(elem => {
-  //   if (elem.toLowerCase() === playerChoise.toLowerCase()) choise = elem;
-  // })
+  let playerChoise = prompt('Make your choise');
+  let choise;
+  ITEMS.forEach(elem => {
+    if (elem.toLowerCase() === playerChoise.toLowerCase()) choise = elem;
+  })
   if (!choise) {
     console.log('Wrong data')
     return playerPlay();
@@ -56,13 +56,3 @@ function game(quantity) {
 }
 
 console.log(game(5))
-
-// for (let i = 0; i < TURNS; i++) {
-//   computerPlay();
-// }
-
-// for (let item in statistic) {
-//   statistic[item] = `${statistic[item] / TURNS * 100}%`;
-// }
-
-// console.table(statistic, 'with %')
