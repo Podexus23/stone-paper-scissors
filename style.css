@@ -75,10 +75,10 @@ h2 {
   width: 150px;
   height: 150px;
   transition: all 0.5s;
+  cursor: pointer;
 }
 
 .item:hover {
-  transform: scale(1.2);
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 5px;
 }
@@ -91,13 +91,10 @@ h2 {
 }
 
 .player-items .item {
-  /* background: #F44A4A; */
   filter: invert(95%) sepia(64%) saturate(2904%) hue-rotate(321deg) brightness(104%) contrast(91%);
 }
 
-.computer-items .item {
-  /* background: #F4CF4A; */
-}
+
 
 .result-block {
   margin-top: 10px;
@@ -110,5 +107,6 @@ h2 {
 .active {
   transform: scale(1.2);
   background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0px 0px 3px 2px black;
   border-radius: 5px;
 }

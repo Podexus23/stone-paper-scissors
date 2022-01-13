@@ -11,6 +11,7 @@
     href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Monoton&family=Permanent+Marker&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="image/png" href="https://example.com/favicon.png" />
   <title>Rock Paper Scissors</title>
 </head>
 <header class="header">
@@ -21,9 +22,9 @@
   <div class="player-block">
     <h2 class="player">Make your choise</h2>
     <div class="player-items">
-      <img src="./img/rock.svg" alt="rock image" class="item">
-      <img src="./img/paper.svg" alt="rock image" class="item">
-      <img src="./img/scissors.svg" alt="rock image" class="item">
+      <img src="./img/rock.svg" alt="rock image" data-item="rock" class="item">
+      <img src="./img/paper.svg" alt="paper image" data-item="paper" class="item">
+      <img src="./img/scissors.svg" alt="scissors image" data-item="scissors" class="item">
       <div class="counter">0</div>
     </div>
 
@@ -31,9 +32,9 @@
   <div class="computer-block">
     <h2 class="computer">Machine choise</h2>
     <div class="computer-items">
-      <img src="./img/rock.svg" alt="rock image" class="item">
-      <img src="./img/paper.svg" alt="rock image" class="item">
-      <img src="./img/scissors.svg" alt="rock image" class="item">
+      <img src="./img/rock.svg" alt="rock image" data-item="rock" class="item">
+      <img src="./img/paper.svg" alt="paper image" data-item="paper" class="item">
+      <img src="./img/scissors.svg" alt="scissors image" data-item="scissors" class="item">
       <div class="counter">0</div>
     </div>
   </div>
@@ -41,7 +42,7 @@
 </main>
 
 <body>
-  <!-- <script src="./game.js"></script> -->
+  <script src="./code.js"></script>
 </body>
 
 </html>
